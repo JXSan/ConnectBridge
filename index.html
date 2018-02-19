@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!-- Set the page width to the size of the device and set the zoom to 1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ConnectBridge</title>
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <!--Navigation bar-->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">CONNECT<span>BRIDGE</span></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#feature">Our Mission</a></li>
+          <li><a href="#organisations">Our Service</a></li>
+          <li><a href="#courses">Testomonials</a></li>
+          <li><a href="#footer">Contact Us</a></li>
+          <li><a href="#" data-target="#login" data-toggle="modal">Sign in</a></li>
+          <li class="btn-trial"><a href="signup.html">Sign Up</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Navigation bar-->
+  <!--Modal box-->
+  <div class="modal fade" id="login" role="dialog">
+    <div class="modal-dialog modal-sm">
+
+      <!-- Modal content no 1-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center form-title">Login</h4>
+        </div>
+        <div class="modal-body padtrbl">
+
+          <div class="login-box-body">
+            <p class="login-box-msg">Sign in to start your session</p>
+            <div class="form-group">
+              <form name="" id="loginForm">
+                <div class="form-group has-feedback">
+                  <!----- username -------------->
+                  <input class="form-control" placeholder="Username" id="loginid" type="text" autocomplete="off" />
+                  <span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span>
+                  <!---Alredy exists  ! -->
+                  <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                  <!----- password -------------->
+                  <input class="form-control" placeholder="Password" id="loginpsw" type="password" autocomplete="off" />
+                  <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span>
+                  <!---Alredy exists  ! -->
+                  <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="checkbox icheck">
+                      <label>
+                            <input type="checkbox" id="loginrem" > Remember Me
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <button type="button" class="btn btn-green btn-block btn-flat" id="submitBtn" onclick="userlogin()">Sign In</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--/ Modal box-->
+  <!--Banner-->
+  <div class="banner">
+    <div class="bg-color">
+      <div class="container">
+        <div class="row">
+          <div class="banner-text text-center">
+            <div class="text-border">
+              <h2 class="text-dec">Create a better future</h2>
+            </div>
+            <div class="intro-para text-center quote">
+              <p class="big-text">Form an unforgettable relationship, for life.</p>
+              <p class="small-text">Our mentors are here for you. They want to form an unforgettable relationship to get you where you need to be in your career by establishing goal and milestones for you in the beginning of the mentorship. Click the button below to embark on an unforgettable journey.  </p>
+              <a href="#footer" class="btn get-quote">Find My Mentor</a>
+            </div>
+            <a href="#feature" class="mouse-hover">
+              <div class="mouse"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Banner-->
+  <!--Feature-->
+  <section id="feature" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="header-section text-center">
+          <h2>Our Mission</h2>
+          <p>Our mission was created upon the realization that viewing mentors and role models who have been where you have been and are where you want to be is the most meaningful. We created a beautifully designed forum for finding mentors with relatable backgrounds and specific current achievements that create value and connection for mentees.</p>
+          <hr class="bottom-line">
+        </div>
+        <div class="feature-info">
+          <div class="fea">
+            <div class="col-md-4">
+              <div class="heading pull-right">
+                <h4>Personalized Sign Up</h4>
+                <p>Our sign up process is extremely fast and personalized. We ask you questions about your ethnicity, interests, major and much more to fully understand what you are looking for in a mentor.</p>
+              </div>
+              <div class="fea-img pull-left">
+                <i class="fa fa-css3"></i>
+              </div>
+            </div>
+          </div>
+          <div class="fea">
+            <div class="col-md-4">
+              <div class="heading pull-right">
+                <h4>Choose From Over 200 Mentors</h4>
+                <p>You have the freedom to choose your professional based on various filters we provide. Our system will give you some recommendations, but you have the option to pick one of our picks, or simply pick yourself. </p>
+              </div>
+              <div class="fea-img pull-left">
+                <i class="fa fa-drupal"></i>
+              </div>
+            </div>
+          </div>
+          <div class="fea">
+            <div class="col-md-4">
+              <div class="heading pull-right">
+                <h4>Managing Mentor/Mentee Relationship</h4>
+                <p>Donec et lectus bibendum dolor dictum auctor in ac erat. Vestibulum egestas sollicitudin metus non urna in eros tincidunt convallis id id nisi in interdum.</p>
+              </div>
+              <div class="fea-img pull-left">
+                <i class="fa fa-trophy"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ feature-->
+  <!--Organisations-->
+  <section id="organisations" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="orga-stru">
+              <h3>X</h3>
+              <p>Y</p>
+              <i class="fa fa-male"></i>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="orga-stru">
+              <h3>X</h3>
+              <p>Y</p>
+              <i class="fa fa-male"></i>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="orga-stru">
+              <h3>X</h3>
+              <p>Y</p>
+              <i class="fa fa-male"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-info">
+            <hgroup>
+              <h3 class="det-txt"> Why is diversity in the tech industry important?</h3>
+              <h4 class="sm-txt">Sample Text</h4>
+            </hgroup>
+            <p class="det-p">According to statistics from various websites, it was determined that...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Organisations-->
+
+  <!--Courses-->
+  <section id="courses" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="header-section text-center">
+          <h2>Testomonials</h2>
+          <p>Below you can view some of our mentors along with their mentee. Hover over the image to see what they have to say about our platform and how it has changed their career.</p>
+          <hr class="bottom-line">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 padleft-right">
+          <figure class="imghvr-fold-up">
+            <img src="img/mentor_mentee_1.jpg" class="img-responsive">
+            <figcaption>
+              <h3>Christopher Reyes</h3>
+              <p>Christopher Reyes and his mentor _______ .....</p>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+        </div>
+        <div class="col-md-4 col-sm-6 padleft-right">
+          <figure class="imghvr-fold-up">
+            <img src="img/mentor_mentee_2.jpg" class="img-responsive">
+            <figcaption>
+              <h3>Mentor/Mentee Name</h3>
+              <p>Placehodler text.</p>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+        </div>
+        <div class="col-md-4 col-sm-6 padleft-right">
+          <figure class="imghvr-fold-up">
+            <img src="img/mentor_mentee_3.jpg" class="img-responsive">
+            <figcaption>
+              <h3>Mentor/Mentee Name</h3>
+              <p>Placehodler text.</p>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+        </div>
+        <div class="col-md-4 col-sm-6 padleft-right">
+          <figure class="imghvr-fold-up">
+            <img src="img/mentor_mentee_4.jpg" class="img-responsive">
+            <figcaption>
+              <h3>Mentor/Mentee Name</h3>
+              <p>Placehodler text.</p>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+        </div>
+        <div class="col-md-4 col-sm-6 padleft-right">
+          <figure class="imghvr-fold-up">
+            <img src="img/mentor_mentee_5.jpg" class="img-responsive">
+            <figcaption>
+              <h3>Mentor/Mentee Name</h3>
+              <p>Placehodler text.</p>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+        </div>
+        <div class="col-md-4 col-sm-6 padleft-right">
+          <figure class="imghvr-fold-up">
+            <img src="img/mentor_mentee_6.jpg" class="img-responsive">
+            <figcaption>
+              <h3>Mentor/Mentee Name</h3>
+              <p>Placehodler text.</p>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Courses-->
+  <!--Pricing-->
+  <section id="pricing" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="header-section text-center">
+          <h2>We will think of something to put here</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
+          <hr class="bottom-line">
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="price-table">
+            <!-- Plan  -->
+            <div class="pricing-head">
+              <h4>X</h4>
+              <span class="fa"></span> <span class="amount">Y</span>
+            </div>
+
+            <!-- Plean Detail -->
+            <div class="price-in mart-15">
+              <a href="#" class="btn btn-bg green btn-block">CLICK</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="price-table">
+            <!-- Plan  -->
+            <div class="pricing-head">
+              <h4>X</h4>
+              <span class="fa"></span> <span class="amount">Y</span>
+            </div>
+
+            <!-- Plean Detail -->
+            <div class="price-in mart-15">
+              <a href="#" class="btn btn-bg yellow btn-block">CLICK</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="price-table">
+            <!-- Plan  -->
+            <div class="pricing-head">
+              <h4>X</h4>
+              <span class="fa"></span> <span class="amount">Y</span>
+            </div>
+
+            <!-- Plean Detail -->
+            <div class="price-in mart-15">
+              <a href="#" class="btn btn-bg red btn-block">CLICK</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Pricing-->
+  <!--Contact-->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="header-section text-center">
+          <h2>Contact Us</h2>
+          <p>Feel free to contact us!</p>
+          <hr class="bottom-line">
+        </div>
+        <div id="sendmessage">Your message has been sent. Thank you!</div>
+        <div id="errormessage"></div>
+        <form action="" method="post" role="form" class="contactForm">
+          <div class="col-md-6 col-sm-6 col-xs-12 left">
+            <div class="form-group">
+              <input type="text" name="name" class="form-control form" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-6 col-xs-12 right">
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+          </div>
+
+          <div class="col-xs-12">
+            <!-- Button -->
+            <button type="submit" id="submit" name="submit" class="form contact-form-button light-form-button oswald light">SEND EMAIL</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!--/ Contact-->
+  <!--Footer-->
+  <footer id="footer" class="footer">
+    <div class="container text-center">
+        <h3>ConnectBridge Social Media</h3>
+      <!-- End newsletter-form -->
+      <ul class="social-links">
+        <li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
+        <li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
+        <li><a href="#link"><i class="fa fa-google-plus fa-fw"></i></a></li>
+        <li><a href="#link"><i class="fa fa-dribbble fa-fw"></i></a></li>
+        <li><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
+      </ul>
+      ©2018 ConnectBridge. All rights reserved.
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Mentor
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade.com</a>
+      </div>
+    </div>
+  </footer>
+  <!--/ Footer-->
+  <!-- Scripts -->
+  <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+  <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCh-qMDs36iXl2mXK37vT5JagjhDLXzpHo",
+        authDomain: "connectbridge-d1275.firebaseapp.com",
+        databaseURL: "https://connectbridge-d1275.firebaseio.com",
+        projectId: "connectbridge-d1275",
+        storageBucket: "",
+        messagingSenderId: "168257975543"
+      };
+      firebase.initializeApp(config);
+      </script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="contactform/contactform.js"></script>
+  <script src="js/index.js"></script>
+<!--/ Scripts -->
+</body>
+
+</html>
