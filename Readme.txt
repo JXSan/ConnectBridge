@@ -1,6 +1,3 @@
-Thanks for downloading this theme!
-
-Theme Name: Mentor
-Theme URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
-Author: BootstrapMade.com
-Author URL: https://bootstrapmade.com
+#ConnectBridge
+---
+ConnectBridge was created upon the realization that viewing mentors and role models who have been where you have been and are where you want to be is the most meaningful. We decided to create a forum for finding mentors with relatable backgrounds and specific current achievements that create value and connection for mentees.
